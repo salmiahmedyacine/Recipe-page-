@@ -1,0 +1,173 @@
+/* Mr : SALMI Ahmed Yacine  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-weight: 100;
+}
+
+:root {
+  /* Primary */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Eggshell);
+}
+
+.container{
+  margin: 50px 0;
+  background-color: var(--White);
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+}
+.container img{
+  width: 100%;
+  border-radius: 7px;
+}
+
+.container h1{
+  font-family: "Young Serif" ,serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 15px 0;
+}
+.container p{
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--Wenge-Brown);
+}
+
+h2{
+  color: var(--nutmeg);
+  font-family: "Young Serif" ,serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.preparation-time{
+  background-color: #FAF3FA;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+.preparation-time p{
+  color: var(--dark-Raspberry);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+ul li{
+  margin:10px 10px;
+  list-style:outside ;
+  list-style-position:inside;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Wenge-Brown);
+}
+.preparation-time ul li strong{
+  color: var(--Wenge-Brown);
+  margin-left: 9px;
+  font-weight: 700;
+}
+
+
+.ingredient ul li{
+  font-size: 12px;
+  margin-left: 8px;
+}
+ul li span {
+  font-weight: 500;
+  margin-left:8px;
+}
+
+hr {
+  margin: 25px 0;
+  border-style:solid;
+  border-width: 0.1px;
+  color: var(--Light-Grey);
+}
+
+
+.instructions ul li {
+  color: var(--Wenge-Brown);
+  list-style: decimal ;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.instructions ul li span{
+  font-weight: 700;
+  color: var(--Wenge-Brown);
+}
+
+.nutrition p{
+  color: var(--Wenge-Brown);
+  font-weight: 400;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table td:not(:last-child) {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Wenge-Brown);
+  padding: 10px 20px;
+}
+
+table td strong {
+  color: var(--nutmeg);
+  font-weight: 700;
+  font-size: 13px;
+}
+.nutrition table tr:not(:last-child) {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      border-radius:0;
+      margin:0;
+      padding : 0 0;
+      padding-bottom: 20px;
+    }
+    .container img{
+      border-radius: 0;
+    }
+    .container h1 , p , .ingredient ,.instructions,.nutrition {
+      padding: 0 19px;
+    }
+    .container .preparation-time{
+      margin: 19px;
+    }
+    hr{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
